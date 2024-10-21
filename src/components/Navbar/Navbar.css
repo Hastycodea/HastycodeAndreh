@@ -1,21 +1,25 @@
-.navbar{
+nav{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background: #ECF0F3;
     align-items: center;
-    padding: 20px;
+    z-index: 10;
+    background-color: #ECF0F3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 10%;
 }
-.navbar ul{
-    display: flex;
-}
-.navbar ul li{
+nav ul li{
+    display: inline-block;
     list-style: none;
+    margin: 10px 5px;
     padding-left: 25px;
     text-transform: uppercase;
     font-size: 14px;
     cursor: pointer;
 }
-.navbar ul li p:hover{
+nav ul li p:hover{
     border-bottom: solid #5A72A8 0.1rem;
     color: #5651E5;
 }
