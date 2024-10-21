@@ -1,0 +1,23 @@
+.skills {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skill {
+  flex-basis: 24%;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin-bottom: 15px;
+}
+.skill img {
+  width: 50px;
+}
+.skill p {
+  font-size: 15px;
+  font-weight: 600;
+}
