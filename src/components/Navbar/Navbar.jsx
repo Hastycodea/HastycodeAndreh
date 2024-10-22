@@ -1,32 +1,51 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
     <nav>
-        <h3>HA</h3>
+      <h3>
+        <Link to="hero" smooth={true} offset={-100} duration={500}>
+          HA
+        </Link>
+      </h3>
       <ul>
-        <li>
-          <p>Home</p>
-        </li>
-        <li>
-          <p>About</p>
-        </li>
-        <li>
-          <p>Skills</p>
-        </li>
-        <li>
-          <p>Projects</p>
-        </li>
-        <li>
-          <p>Blogs</p>
-        </li>
-        <li>
-          <p>Contact</p>
-        </li>
-        <li>
-          <p>Webinar Talk</p>
-        </li>
+        <Link to="hero" smooth={true} offset={-100} duration={500}>
+          <li>
+            <p>Home</p>
+          </li>
+        </Link>
+        <Link to="about" smooth={true} offset={-210} duration={500}>
+          <li>
+            <p>About</p>
+          </li>
+        </Link>
+        <Link to="skills" smooth={true} offset={-200} duration={500}>
+          <li>
+            <p>Skills</p>
+          </li>
+        </Link>
+        <Link to="projects" smooth={true} offset={-220} duration={500}>
+          <li>
+            <p>Projects</p>
+          </li>
+        </Link>
+        <Link to="blogs" smooth={true} offset={-190} duration={500}>
+          <li>
+            <p>Blogs</p>
+          </li>
+        </Link>
+        <Link to="contact" smooth={true} offset={-190} duration={500}>
+          <li>
+            <p>Contact</p>
+          </li>
+        </Link>
+        <Link to="hero" smooth={true} offset={-100} duration={500}>
+          <li>
+            <p>Webinar Talk</p>
+          </li>
+        </Link>
       </ul>
     </nav>
   );

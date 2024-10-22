@@ -1,3 +1,7 @@
+nav h3{
+    font-size: 32px;
+    cursor: pointer;
+}
 nav{
     width: 100%;
     display: flex;

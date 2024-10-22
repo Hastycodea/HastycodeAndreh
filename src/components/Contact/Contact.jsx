@@ -9,6 +9,7 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import setup from "../../assets/setup.jpg";
+import { Link } from "react-scroll";
 
 const Contact = () => {
   return (
@@ -38,25 +39,27 @@ const Contact = () => {
           </div>
         </div>
         <div className="right-contact">
-            <form action="">
-                <label>NAME</label>
-                <input type="name" />
-                <label>PHONE NUMBER</label>
-                <input type="phone" />
-                <label>EMAIL</label>
-                <input type="email" />
-                <label>SUBJECT</label>
-                <input type="subject" />
-                <label>MESSAGE</label>
-                <textarea name="message" id="" ></textarea>
-            </form>
-            <button className="form-btn">SEND MESSAGE</button>
+          <form action="">
+            <label>NAME</label>
+            <input type="name" />
+            <label>PHONE NUMBER</label>
+            <input type="phone" />
+            <label>EMAIL</label>
+            <input type="email" />
+            <label>SUBJECT</label>
+            <input type="subject" />
+            <label>MESSAGE</label>
+            <textarea name="message" id=""></textarea>
+          </form>
+          <button className="form-btn">SEND MESSAGE</button>
         </div>
       </div>
-      <div className="scroll-up">
-        <FontAwesomeIcon icon={faChevronUp} />
-        <FontAwesomeIcon icon={faChevronUp} />
-      </div>
+      <Link to="hero" duration={500} smooth={true} offset={-100}>
+        <div className="scroll-up">
+          <FontAwesomeIcon icon={faChevronUp} />
+          <FontAwesomeIcon icon={faChevronUp} />
+        </div>
+      </Link>
     </div>
   );
 };
