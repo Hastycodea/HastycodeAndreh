@@ -66,7 +66,10 @@ input, textarea {
   outline: none;
   border: none;
   border-radius: 10px;
-  background: hsla(0, 0%, 40%, 0.279);
+  background: #fff;
+  font-size: 16px;
+  padding: 10px;
+  font-weight: 200;
 }
 label{
   margin-bottom: 10px;

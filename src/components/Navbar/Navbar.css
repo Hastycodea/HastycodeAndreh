@@ -8,11 +8,14 @@ nav{
     justify-content: space-between;
     align-items: center;
     z-index: 10;
-    background-color: #ECF0F3;
     position: fixed;
     top: 0;
     left: 0;
     padding: 10px 10%;
+}
+.dark-nav{
+    background-color: #ECF0F3;
+    box-shadow: 0 5px 10px -5px;
 }
 nav ul li{
     display: inline-block;

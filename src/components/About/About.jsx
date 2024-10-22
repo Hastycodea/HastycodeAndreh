@@ -8,7 +8,7 @@ const About = () => {
       <div className="left-about">
         <p>
           I am a software engineer and Full stack developer with
-          <span>Elixir</span>, <span>Phoenix Live View</span>, and
+          <span> Elixir</span>, <span>Phoenix Live View</span>, and
           <span> React JS</span> experience. I am also a Technical Writer.
         </p>
 
@@ -18,7 +18,7 @@ const About = () => {
           a remote international learning institution where I learned through
           pair programming and project building. We worked on many different
           technologies like
-          <span>HTML</span>, <span>CSS</span>, <span>JS</span>,{" "}
+          <span> HTML</span>, <span>CSS</span>, <span>JS</span>,{" "}
           <span>React</span>,<span>PostgreSQL</span>, <span>Ruby on Rails</span>
           , and collaborated with developers across the globe. Additionally, I
           have completed a software development program at Moringa School, which
