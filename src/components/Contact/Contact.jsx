@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedin,
   faGithub,
@@ -21,7 +21,7 @@ const Contact = () => {
         <div className="left-contact">
           <img src={setup} alt="" />
           <p className="name">Hastycode Andreh</p>
-          <p className="">Software Developer</p>
+          <p className="name-title">Software Developer</p>
           <p className="ideas">
             Do you have any ideas you would love to bring to life , whether it
             is a landing page to drive more sales or a mega system that will
@@ -48,10 +48,14 @@ const Contact = () => {
                 <label>SUBJECT</label>
                 <input type="subject" />
                 <label>MESSAGE</label>
-                <textarea name="message" id="" rows='14'></textarea>
+                <textarea name="message" id="" ></textarea>
             </form>
-            <button>SEND MESSAGE</button>
+            <button className="form-btn">SEND MESSAGE</button>
         </div>
+      </div>
+      <div className="scroll-up">
+        <FontAwesomeIcon icon={faChevronUp} />
+        <FontAwesomeIcon icon={faChevronUp} />
       </div>
     </div>
   );

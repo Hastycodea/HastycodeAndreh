@@ -1,24 +1,27 @@
 .contact-section {
   display: flex;
   justify-content: space-between;
-  margin: 80px auto;
+  margin: 50px auto;
   align-items: center;
 }
 .left-contact {
-  display: inline-block;
-  width: 30%;
+  width: 40%;
   padding: 10px;
   border-radius: 12px;
+  height: 95vh;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .left-contact img {
-  width: 300px;
+  width: 400px;
   border-radius: 13px;
 }
 .name {
   font-weight: 600;
   font-size: 18px;
+}
+.name-title{
+  margin-bottom: 10px;
 }
 .contact-title {
   font-weight: 300;
@@ -29,12 +32,16 @@
   font-size: 15px;
   margin-bottom: 20px;
 }
+.socials {
+  margin-top: 10px;
+}
 .socials .icon {
-  font-size: 14px;
+  font-size: 22px;
   padding: 18px;
 }
 .right-contact {
-  width: 65%;
+  width: 57%;
+  height: 95vh;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -43,3 +50,38 @@
   display: flex;
   flex-direction: column;
 }
+.form-btn{
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+}
+input{
+  height: 40px;
+}
+textarea{
+  height: 120px;
+}
+input, textarea {
+  margin-bottom: 15px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: hsla(0, 0%, 40%, 0.279);
+}
+label{
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.scroll-up{
+  margin: 10px auto;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  
+}
+
