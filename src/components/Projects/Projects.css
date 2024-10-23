@@ -74,10 +74,26 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: rgba(72, 0, 255, 0.93);
+  background: rgba(51, 103, 209, 0.93);
   cursor: pointer;
   transition: 0.4s;
   opacity: 0;
+}
+.caption h3{
+  width: 350px;
+  text-align: center;
+}
+.caption p{
+  margin: 10px;
+}
+.caption button{
+  background: #fff;
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  width: 300px;
+  padding: 10px 0;
+  color: #5651e5;
 }
 .sample img{
   width: 100%;
@@ -88,6 +104,6 @@
   transform: scale(1.05);
 } */
 .sample:hover .caption {
-  /* transform: scale(1.05); */
+  transform: scale(1.01); 
   opacity: 1;
 }

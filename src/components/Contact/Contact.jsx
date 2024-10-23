@@ -12,6 +12,32 @@ import setup from "../../assets/setup.jpg";
 import { Link } from "react-scroll";
 
 const Contact = () => {
+
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "51d2f1c5-d4b5-4749-b659-0ffa8991bc98");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Message sent successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div className="contact">
       <p>
@@ -39,19 +65,20 @@ const Contact = () => {
           </div>
         </div>
         <div className="right-contact">
-          <form action="">
+          <form action="" onSubmit={onSubmit}>
             <label>NAME</label>
-            <input type="name" />
+            <input type="name" name="text" placeholder="Enter your name" />
             <label>PHONE NUMBER</label>
-            <input type="phone" />
+            <input type="tel" name="phone" placeholder="Enter your mobile number" />
             <label>EMAIL</label>
-            <input type="email" />
+            <input type="email" name="email" placeholder="Enter your email address"/>
             <label>SUBJECT</label>
-            <input type="subject" />
+            <input type="subject" name="subject" placeholder="Enter your subject" />
             <label>MESSAGE</label>
-            <textarea name="message" id=""></textarea>
+            <textarea name="message" placeholder="Enter your message" required></textarea>
+            <p>{result}</p>
+            <button type="submit" className="form-btn">SEND MESSAGE</button>
           </form>
-          <button className="form-btn">SEND MESSAGE</button>
         </div>
       </div>
       <Link to="hero" duration={500} smooth={true} offset={-100}>
