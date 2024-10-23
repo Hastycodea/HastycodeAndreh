@@ -74,7 +74,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: rgba(72, 0, 255, 0.764);
+  background: rgba(72, 0, 255, 0.93);
   cursor: pointer;
   transition: 0.4s;
   opacity: 0;
@@ -88,6 +88,6 @@
   transform: scale(1.05);
 } */
 .sample:hover .caption {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
   opacity: 1;
 }
