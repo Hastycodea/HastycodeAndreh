@@ -14,19 +14,19 @@ const Projects = () => {
       </p>
       <div className="selection">
         <div className="all">
-          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} className="star"/>
           <p>All Projects</p>
-          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} className="star"/>
         </div>
         <div className="all">
-          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} className="star"/>
           <p>Phoenix / Elixir Projects</p>
-          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} className="star"/>
         </div>
         <div className="all">
-          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} className="star"/>
           <p>React / Javascript Projects</p>
-          <FontAwesomeIcon icon={faStar} />
+          <FontAwesomeIcon icon={faStar} className="star"/>
         </div>
       </div>
       <div className="samples">

@@ -84,8 +84,12 @@ label{
   flex-direction: column;
   font-size: 28px;
   border-radius: 50%;
+  transition: 0.5s;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   
+}
+.scroll-up:hover{
+  transform: scale(1.06);
 }
 
