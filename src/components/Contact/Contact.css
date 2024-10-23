@@ -76,6 +76,7 @@ label{
   font-size: 14px;
 }
 .scroll-up{
+  cursor: pointer;
   margin: 10px auto;
   width: 60px;
   height: 60px;
