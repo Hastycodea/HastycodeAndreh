@@ -14,28 +14,78 @@ const Projects = () => {
       </p>
       <div className="selection">
         <div className="all">
-          <FontAwesomeIcon icon={faStar} className="star"/>
+          <FontAwesomeIcon icon={faStar} className="star" />
           <p>All Projects</p>
-          <FontAwesomeIcon icon={faStar} className="star"/>
+          <FontAwesomeIcon icon={faStar} className="star" />
         </div>
         <div className="all">
-          <FontAwesomeIcon icon={faStar} className="star"/>
+          <FontAwesomeIcon icon={faStar} className="star" />
           <p>Phoenix / Elixir Projects</p>
-          <FontAwesomeIcon icon={faStar} className="star"/>
+          <FontAwesomeIcon icon={faStar} className="star" />
         </div>
         <div className="all">
-          <FontAwesomeIcon icon={faStar} className="star"/>
+          <FontAwesomeIcon icon={faStar} className="star" />
           <p>React / Javascript Projects</p>
-          <FontAwesomeIcon icon={faStar} className="star"/>
+          <FontAwesomeIcon icon={faStar} />
         </div>
       </div>
+      {/* <div className="samples">
+          <img src={sample} alt="" />
+          <img src={sample} alt="" />
+          <img src={sample} alt="" />
+          <img src={sample} alt="" />
+          <img src={sample} alt="" />
+          <img src={sample} alt="" />
+      </div> */}
       <div className="samples">
+        <div className="sample">
           <img src={sample} alt="" />
+          <div className="caption">
+            <h3>Engage Pro Employee Management System</h3>
+            <p>React JS, Tailwind CSS</p>
+            <button>More Info</button>
+          </div>
+        </div>
+        <div className="sample">
           <img src={sample} alt="" />
+          <div className="caption">
+            <h3>Engage Pro Employee Management System</h3>
+            <p>React JS, Tailwind CSS</p>
+            <button>More Info</button>
+          </div>
+        </div>
+        <div className="sample">
           <img src={sample} alt="" />
+          <div className="caption">
+            <h3>Engage Pro Employee Management System</h3>
+            <p>React JS, Tailwind CSS</p>
+            <button>More Info</button>
+          </div>
+        </div>
+        <div className="sample">
           <img src={sample} alt="" />
+          <div className="caption">
+            <h3>Engage Pro Employee Management System</h3>
+            <p>React JS, Tailwind CSS</p>
+            <button>More Info</button>
+          </div>
+        </div>
+        <div className="sample">
           <img src={sample} alt="" />
+          <div className="caption">
+            <h3>Engage Pro Employee Management System</h3>
+            <p>React JS, Tailwind CSS</p>
+            <button>More Info</button>
+          </div>
+        </div>
+        <div className="sample">
           <img src={sample} alt="" />
+          <div className="caption">
+            <h3>Engage Pro Employee Management System</h3>
+            <p>React JS, Tailwind CSS</p>
+            <button>More Info</button>
+          </div>
+        </div>
       </div>
     </div>
   );

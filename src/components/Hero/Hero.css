@@ -21,12 +21,15 @@
 .intro {
   font-size: 32px;
   font-weight: 600;
-  margin: 10px 0;
+  margin-top: 10px;
 }
 .role {
   font-size: 32px;
   color: #5651e5;
+  margin-top: 10px;
   margin-bottom: 20px;
+  font-weight: 500;
+  min-height: 40px;
 }
 .description {
   line-height: 1.8rem;

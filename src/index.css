@@ -2,12 +2,13 @@
 
 *{
     font-family: "Outfit", sans-serif;
-    color: #1F2937;
+    /* color: #1F2937; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
+    color: #1F2937;
     background: #ECF0F3;;
 }
 .container{

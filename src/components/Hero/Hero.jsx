@@ -1,8 +1,14 @@
 import React from "react";
 import "./Hero.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faGithub, faXTwitter, faWhatsapp  } from '@fortawesome/free-brands-svg-icons'
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faXTwitter,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+import {ReactTyped} from "react-typed";
 
 const Hero = () => {
   return (
@@ -12,7 +18,23 @@ const Hero = () => {
         Hi , I am <span>Hastycode Andreh</span>
       </h3>
       <p className="intro">I am a</p>
-      <p className="role">Software Engineer</p>
+
+      <ReactTyped
+        strings={[
+          "Full Stack Developer",
+          "React Js Developer",
+          "Java Developer",
+          "Python Developer",
+          "Technical Writer",
+        ]}
+        typeSpeed={150}
+        backSpeed={100}
+        showCursor={false}
+        loop
+        className="role"
+      />
+
+      {/* <p className="role">Software Engineer</p> */}
       <p className="description">
         Looking for a full-stack developer with a track record of success for
         your next project? Look no further! With 4 years of self-taught
