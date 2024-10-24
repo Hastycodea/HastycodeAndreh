@@ -12,7 +12,7 @@ const Blogs = () => {
 
   const slideForward = ()=> {
     if(tx > -50){
-      tx -= -25;
+      tx -= -33.33;
     }
     slider.current.style.transform = `translateX(${tx}%)`;
   }
