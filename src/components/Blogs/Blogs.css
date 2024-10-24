@@ -1,6 +1,28 @@
+.blogs{
+  position: relative;
+  overflow: hidden;
+}
+.left-arrow, .right-arrow{
+  padding: 15px;
+  background: #3632bd;
+  color: white;
+  border-radius: 50%;
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.left-arrow{
+  left: 0;
+  right: auto;
+}
 .display-blogs {
   display: flex;
-  margin-top: 25px;
+  margin: 25px auto;
+  width: 200%;
+  overflow-x: hidden;
 }
 .blog {
   display: flex;
@@ -11,6 +33,7 @@
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   transition: 0.5s;
   cursor: pointer;
+  width: 33.33%
 }
 .blog p {
   padding-right: 10px;
