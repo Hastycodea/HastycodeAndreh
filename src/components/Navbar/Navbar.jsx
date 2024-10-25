@@ -2,7 +2,13 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faXTwitter,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -21,12 +27,12 @@ const Navbar = () => {
 
   const hideMobileMenu = () => {
     setMobileMenu(false);
-  }
+  };
 
   return (
     <nav className={`${sticky ? "dark-nav" : ""}`}>
-      <div className={mobileMenu ? 'overlay-active' : ''}></div>
-      <h3> 
+      <div className={mobileMenu ? "overlay-active" : ""}></div>
+      <h3>
         <Link to="hero" smooth={true} offset={-100} duration={500}>
           HA
         </Link>
@@ -39,7 +45,11 @@ const Navbar = () => {
                 HA
               </Link>
             </h3>
-            <FontAwesomeIcon icon={faXmark} className="mobile-x" onClick={hideMobileMenu}  />
+            <FontAwesomeIcon
+              icon={faXmark}
+              className="mobile-x"
+              onClick={hideMobileMenu}
+            />
           </div>
           <p>Let&apos;s build something together</p>
         </div>
@@ -75,9 +85,17 @@ const Navbar = () => {
         </Link>
         <Link to="hero" smooth={true} offset={-100} duration={500}>
           <li>
-            <p>Webinar Talk</p>
+            <p>Webinar Talk Show</p>
           </li>
         </Link>
+        <p className="connect">Let&apos;s connect</p>
+        <div className="icons">
+          <FontAwesomeIcon icon={faLinkedin} className="icon" />
+          <FontAwesomeIcon icon={faGithub} className="icon" />
+          <FontAwesomeIcon icon={faXTwitter} className="icon" />
+          <FontAwesomeIcon icon={faPhone} className="icon" />
+          <FontAwesomeIcon icon={faWhatsapp} className="icon" />
+        </div>
       </ul>
       <FontAwesomeIcon
         icon={faBars}

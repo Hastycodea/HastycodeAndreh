@@ -49,6 +49,29 @@
   transition: 0.5s;
   cursor: pointer;
 }
-.icon:hover{
+.icon:hover {
   transform: scale(1.1);
+}
+@media (max-width: 850px) {
+  .hero .catch-phrase {
+    font-size: 12px;
+  }
+  .hero h3 {
+    margin-top: 15px;
+    font-size: 32px;
+    text-align: center;
+  }
+  .intro {
+    font-size: 24px;
+  }
+  .role {
+    font-size: 24px;
+  }
+  .description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .icon {
+    padding: 10px;
+  }
 }
