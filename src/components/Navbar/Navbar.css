@@ -30,3 +30,36 @@ nav ul li p:hover{
     border-bottom: solid #5A72A8 0.1rem;
     color: #5651E5;
 }
+.menu-icon{
+    display: none;
+}
+
+@media(max-width: 840px) {
+   nav{
+    padding: 10px 0;
+   } 
+   nav ul{
+    position: fixed;
+    width: 200px;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    padding-top: 70px;
+    background: #ECF0F3;
+    z-index: -1;
+    transition: 0.5s;
+   }
+   nav ul li{
+    display: block;
+    margin: 25px 0px;
+    text-transform: capitalize;
+   }
+   .menu-icon{
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+   }
+   .hide-mobile-menu{
+    left: -200px;
+   }
+}

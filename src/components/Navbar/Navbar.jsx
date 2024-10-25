@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -11,14 +13,21 @@ const Navbar = () => {
     });
   }, []);
 
+  const [mobileMenu, setMobileMenu] = useState(false);
+
+  const toggleMobileMenu = ()=> {
+    mobileMenu ? setMobileMenu(false) : setMobileMenu(true);
+  }
+
   return (
     <nav className={`${sticky ? 'dark-nav' : ""}`}>
+      <div className="overlay-active"></div>
       <h3>
         <Link to="hero" smooth={true} offset={-100} duration={500}>
           HA
         </Link>
       </h3>
-      <ul>
+      <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
         <Link to="hero" smooth={true} offset={-100} duration={500}>
           <li>
             <p>Home</p>
@@ -55,6 +64,8 @@ const Navbar = () => {
           </li>
         </Link>
       </ul>
+      <FontAwesomeIcon icon={faBars} className="menu-icon" onClick={toggleMobileMenu}/>
+
     </nav>
   );
 };
