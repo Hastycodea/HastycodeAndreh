@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <nav className={`${sticky ? "dark-nav" : ""}`}>
-      <div className={mobileMenu ? "" : 'overlay-active'}></div>
+      <div className={mobileMenu ? 'overlay-active' : ''}></div>
       <h3> 
         <Link to="hero" smooth={true} offset={-100} duration={500}>
           HA
