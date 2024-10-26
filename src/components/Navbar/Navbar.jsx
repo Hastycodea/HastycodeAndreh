@@ -32,11 +32,19 @@ const Navbar = () => {
   return (
     <nav className={`${sticky ? "dark-nav" : ""}`}>
       <div className={mobileMenu ? "overlay-active" : ""}></div>
-      <h3>
-        <Link to="hero" smooth={true} offset={-100} duration={500}>
-          HA
-        </Link>
-      </h3>
+      <div className={`mobile-nav ${sticky ? "dark-nav" : ""}`}>
+        <h3 className="logo-title">
+          <Link to="hero" smooth={true} offset={-100} duration={500}>
+            HA
+          </Link>
+        </h3>
+        <FontAwesomeIcon
+          icon={faBars}
+          className="menu-icon"
+          onClick={toggleMobileMenu}
+        />
+      </div>
+
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <div className="mobile-title">
           <div className="top-logo">
@@ -53,41 +61,43 @@ const Navbar = () => {
           </div>
           <p>Let&apos;s build something together</p>
         </div>
-        <Link to="hero" smooth={true} offset={-100} duration={500}>
-          <li>
-            <p>Home</p>
-          </li>
-        </Link>
-        <Link to="about" smooth={true} offset={-210} duration={500}>
-          <li>
-            <p>About</p>
-          </li>
-        </Link>
-        <Link to="skills" smooth={true} offset={-200} duration={500}>
-          <li>
-            <p>Skills</p>
-          </li>
-        </Link>
-        <Link to="projects" smooth={true} offset={-220} duration={500}>
-          <li>
-            <p>Projects</p>
-          </li>
-        </Link>
-        <Link to="blogs" smooth={true} offset={-190} duration={500}>
-          <li>
-            <p>Blogs</p>
-          </li>
-        </Link>
-        <Link to="contact" smooth={true} offset={-190} duration={500}>
-          <li>
-            <p>Contact</p>
-          </li>
-        </Link>
-        <Link to="hero" smooth={true} offset={-100} duration={500}>
-          <li>
-            <p>Webinar Talk Show</p>
-          </li>
-        </Link>
+        <div>
+          <Link to="hero" smooth={true} offset={-100} duration={500}>
+            <li>
+              <p>Home</p>
+            </li>
+          </Link>
+          <Link to="about" smooth={true} offset={-210} duration={500}>
+            <li>
+              <p>About</p>
+            </li>
+          </Link>
+          <Link to="skills" smooth={true} offset={-200} duration={500}>
+            <li>
+              <p>Skills</p>
+            </li>
+          </Link>
+          <Link to="projects" smooth={true} offset={-220} duration={500}>
+            <li>
+              <p>Projects</p>
+            </li>
+          </Link>
+          <Link to="blogs" smooth={true} offset={-190} duration={500}>
+            <li>
+              <p>Blogs</p>
+            </li>
+          </Link>
+          <Link to="contact" smooth={true} offset={-190} duration={500}>
+            <li>
+              <p>Contact</p>
+            </li>
+          </Link>
+          <Link to="hero" smooth={true} offset={-100} duration={500}>
+            <li>
+              <p>Webinar Talk Show</p>
+            </li>
+          </Link>
+        </div>
         <p className="connect">Let&apos;s connect</p>
         <div className="icons">
           <FontAwesomeIcon icon={faLinkedin} className="icon" />
@@ -97,11 +107,6 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faWhatsapp} className="icon" />
         </div>
       </ul>
-      <FontAwesomeIcon
-        icon={faBars}
-        className="menu-icon"
-        onClick={toggleMobileMenu}
-      />
     </nav>
   );
 };
