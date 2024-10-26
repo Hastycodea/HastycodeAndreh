@@ -56,6 +56,9 @@ nav ul li p:hover {
 .mobile-title p {
   font-size: 18px;
 }
+nav .icons, .connect{
+  display: none;
+}
 
 @media (max-width: 840px) {
   .mobile-title,

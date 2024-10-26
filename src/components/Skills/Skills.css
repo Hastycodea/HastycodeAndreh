@@ -26,3 +26,8 @@
 .skill:hover {
   transform: scale(1.06);
 }
+@media(max-width:850px){
+  .skill{
+    flex-basis: 100%
+  }
+}

@@ -95,4 +95,28 @@ label{
 .scroll-up:hover{
   transform: scale(1.06);
 }
+@media(max-width:850px){
+.contact-section{
+  flex-direction: column;
+}
+.left-contact, .right-contact{
+  width: 100%;
+  height: 100%;
+}
+.left-contact{
+  margin-bottom: 25px;
+}
+.left-contact img{
+  width: 100%;
+}
+.socials .icon {
+  padding: 10px;
+  font-size: 16px;
+}
+.socials{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+}
 

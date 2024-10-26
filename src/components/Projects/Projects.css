@@ -107,3 +107,19 @@
   transform: scale(1.01); 
   opacity: 1;
 }
+@media(max-width:850px){
+  .selection{
+    flex-direction: column;
+  }
+  .all{
+    margin-bottom: 10px;
+  }
+  .samples{
+    flex-direction: column;
+  }
+  .sample{
+    width: 100%;
+  }
+
+}
+
