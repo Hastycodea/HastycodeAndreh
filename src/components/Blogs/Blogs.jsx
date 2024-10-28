@@ -31,6 +31,8 @@ const Blogs = () => {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 1000,
+    centerMode: true,
+    centerPadding: "20px",
   };
 
   return (
