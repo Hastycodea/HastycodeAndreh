@@ -1,18 +1,27 @@
 .display-blogs {
   margin: 0 auto;
-  width: 100%;
+  /* width: 100%; */
   height: 80vh;
+  padding: 0 20px;
 }
 .blog {
   display: flex;
   box-shadow: 0 5px 10px -5px;
   cursor: pointer;
-  margin: 25px; 
+  margin: 25px auto; 
+  transition: transform 0.3s ease;
 }
-.slider-container{
+
+/* umbwa noted */
+/* umbwa noted */
+/* umbwa noted */
+.slick-slide{
+  padding: 0 10px;
+}
+/* .slider-container{
   padding: 0 10px;
   box-sizing: border-box;
-}
+} */
 .blog p {
   padding-right: 10px;
   padding-left: 10px;
