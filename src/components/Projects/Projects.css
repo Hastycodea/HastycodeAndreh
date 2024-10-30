@@ -62,7 +62,7 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-.caption{
+.caption {
   position: absolute;
   border-radius: 12px;
   top: 0;
@@ -79,14 +79,14 @@
   transition: 0.4s;
   opacity: 0;
 }
-.caption h3{
+.caption h3 {
   width: 350px;
   text-align: center;
 }
-.caption p{
+.caption p {
   margin: 10px;
 }
-.caption button{
+.caption button {
   background: #fff;
   color: black;
   font-weight: 600;
@@ -95,7 +95,7 @@
   padding: 10px 0;
   color: #5651e5;
 }
-.sample img{
+.sample img {
   width: 100%;
   border-radius: 10px;
   display: block;
@@ -104,22 +104,22 @@
   transform: scale(1.05);
 } */
 .sample:hover .caption {
-  transform: scale(1.01); 
+  transform: scale(1.01);
   opacity: 1;
 }
-@media(max-width:850px){
-  .selection{
+@media (max-width: 850px) {
+  .selection {
     flex-direction: column;
+    align-items: center;
   }
-  .all{
+  .all {
+    justify-content: space-between;
     margin-bottom: 10px;
   }
-  .samples{
+  .samples {
     flex-direction: column;
   }
-  .sample{
+  .sample {
     width: 100%;
   }
-
 }
-
