@@ -15,11 +15,6 @@
 .slick-slide{
   padding: 0 10px;
 }
-.slick-prev, .slick-next{
-  color: black !important;
-  font-size: 24px;
-  z-index: 1;
-}
 /* .slider-container{
   padding: 0 10px;
   box-sizing: border-box;
