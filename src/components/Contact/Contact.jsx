@@ -67,7 +67,7 @@ const Contact = () => {
         <div className="right-contact">
           <form action="" onSubmit={onSubmit}>
             <label>NAME</label>
-            <input type="name" name="text" placeholder="Enter your name" />
+            <input type="name" name="name" placeholder="Enter your name" />
             <label>PHONE NUMBER</label>
             <input type="tel" name="phone" placeholder="Enter your mobile number" />
             <label>EMAIL</label>
