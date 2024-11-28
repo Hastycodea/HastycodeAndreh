@@ -92,11 +92,6 @@ const Navbar = () => {
               <p>Contact</p>
             </li>
           </Link>
-          <Link to="hero" smooth={true} offset={-100} duration={500}>
-            <li>
-              <p>Webinar Talk Show</p>
-            </li>
-          </Link>
         </div>
         <p className="connect">Let&apos;s connect</p>
         <div className="icons">

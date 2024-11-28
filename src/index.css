@@ -1,24 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-
-* {
-  font-family: "Outfit", sans-serif;
-  /* color: #1F2937; */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  color: #1f2937;
-  background: #ecf0f3;
-}
-.container{
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-@media (max-width: 850px) {
-  .container {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -8,7 +8,7 @@ import {
   faXTwitter,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import {ReactTyped} from "react-typed";
+import { ReactTyped } from "react-typed";
 
 const Hero = () => {
   return (
@@ -46,11 +46,21 @@ const Hero = () => {
         build something great together
       </p>
       <div className="icons">
-        <FontAwesomeIcon icon={faLinkedin} className="icon" />
-        <FontAwesomeIcon icon={faGithub} className="icon" />
-        <FontAwesomeIcon icon={faXTwitter} className="icon" />
-        <FontAwesomeIcon icon={faPhone} className="icon" />
-        <FontAwesomeIcon icon={faWhatsapp} className="icon" />
+        <a href="https://www.linkedin.com/in/andreh-andere/" target="_blank">
+          <FontAwesomeIcon icon={faLinkedin} className="icon" />
+        </a>
+        <a href="https://github.com/Hastycodea" target="_blank">
+          <FontAwesomeIcon icon={faGithub} className="icon" />
+        </a>
+        <a href="https://x.com/hastycode_ke" target="_blank">
+          <FontAwesomeIcon icon={faXTwitter} className="icon" />
+        </a>
+        <a href="tel:+254710594179" target="_blank">
+          <FontAwesomeIcon icon={faPhone} className="icon" />
+        </a>
+        <a href="https://wa.me/254710594179" target="_blank" >
+          <FontAwesomeIcon icon={faWhatsapp} className="icon" />
+        </a>
       </div>
     </div>
   );
