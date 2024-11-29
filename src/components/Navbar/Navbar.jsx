@@ -95,11 +95,21 @@ const Navbar = () => {
         </div>
         <p className="connect">Let&apos;s connect</p>
         <div className="icons">
+        <a href="https://www.linkedin.com/in/andreh-andere/" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} className="icon" />
+        </a>
+        <a href="https://github.com/Hastycodea" target="_blank">
           <FontAwesomeIcon icon={faGithub} className="icon" />
+        </a>
+        <a href="https://x.com/hastycode_ke" target="_blank">
           <FontAwesomeIcon icon={faXTwitter} className="icon" />
+        </a>
+        <a href="tel:+254710594179" target="_blank">
           <FontAwesomeIcon icon={faPhone} className="icon" />
+        </a>
+        <a href="https://wa.me/254710594179" target="_blank" >
           <FontAwesomeIcon icon={faWhatsapp} className="icon" />
+        </a>
         </div>
       </ul>
     </nav>

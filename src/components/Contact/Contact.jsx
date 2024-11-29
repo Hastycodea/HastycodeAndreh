@@ -12,7 +12,6 @@ import setup from "../../assets/setup.jpg";
 import { Link } from "react-scroll";
 
 const Contact = () => {
-
   const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
@@ -57,11 +56,24 @@ const Contact = () => {
           </p>
           <p className="connect">CONNECT WITH ME</p>
           <div className="socials">
-            <FontAwesomeIcon icon={faLinkedin} className="icon" />
-            <FontAwesomeIcon icon={faGithub} className="icon" />
-            <FontAwesomeIcon icon={faXTwitter} className="icon" />
-            <FontAwesomeIcon icon={faPhone} className="icon" />
-            <FontAwesomeIcon icon={faWhatsapp} className="icon" />
+            <a
+              href="https://www.linkedin.com/in/andreh-andere/"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faLinkedin} className="icon" />
+            </a>
+            <a href="https://github.com/Hastycodea" target="_blank">
+              <FontAwesomeIcon icon={faGithub} className="icon" />
+            </a>
+            <a href="https://x.com/hastycode_ke" target="_blank">
+              <FontAwesomeIcon icon={faXTwitter} className="icon" />
+            </a>
+            <a href="tel:+254710594179" target="_blank">
+              <FontAwesomeIcon icon={faPhone} className="icon" />
+            </a>
+            <a href="https://wa.me/254710594179" target="_blank">
+              <FontAwesomeIcon icon={faWhatsapp} className="icon" />
+            </a>
           </div>
         </div>
         <div className="right-contact">
@@ -69,15 +81,33 @@ const Contact = () => {
             <label>NAME</label>
             <input type="name" name="name" placeholder="Enter your name" />
             <label>PHONE NUMBER</label>
-            <input type="tel" name="phone" placeholder="Enter your mobile number" />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Enter your mobile number"
+            />
             <label>EMAIL</label>
-            <input type="email" name="email" placeholder="Enter your email address"/>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+            />
             <label>SUBJECT</label>
-            <input type="subject" name="subject" placeholder="Enter your subject" />
+            <input
+              type="subject"
+              name="subject"
+              placeholder="Enter your subject"
+            />
             <label>MESSAGE</label>
-            <textarea name="message" placeholder="Enter your message" required></textarea>
+            <textarea
+              name="message"
+              placeholder="Enter your message"
+              required
+            ></textarea>
             <p>{result}</p>
-            <button type="submit" className="form-btn">SEND MESSAGE</button>
+            <button type="submit" className="form-btn">
+              SEND MESSAGE
+            </button>
           </form>
         </div>
       </div>
