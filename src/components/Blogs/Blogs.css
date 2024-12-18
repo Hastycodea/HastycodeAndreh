@@ -48,3 +48,13 @@ button {
   outline: none;
   border: none;
 }
+
+@media(max-width:850px){
+  .blog{
+    height: 520px;
+  }
+  .blog img{
+    height: 30vh;
+  }
+
+}
