@@ -35,16 +35,9 @@ const Hero = () => {
       />
 
       {/* <p className="role">Software Engineer</p> */}
-      <p className="description">
-        Looking for a full-stack developer with a track record of success for
-        your next project? Look no further! With 4 years of self-taught
-        experience and graduation from top bootcamps Microverse and Moringa, I
-        have the skills and passion to build stunning, scalable web
-        applications. From small to large-scale projects, I have used React ,
-        Elixir and Phoenix to create solutions that delight users and drive
-        results. So why settle for less when you can have the best? Let&apos;s
-        build something great together
-      </p>
+      <p className="description">With over 4 years of hands-on experience, I specialize in crafting efficient and innovative software solutions. My expertise spans backend development with Java and Spring Boot, scalable database management using MySQL, and containerization with Docker. I also excel in designing REST APIs and building microservices to meet diverse application needs.
+
+Why settle for less when you can have a developer who combines technical acumen, creativity, and a commitment to excellence? Let&apos;s collaborate and build something exceptional.</p>
       <div className="icons">
         <a href="https://www.linkedin.com/in/andreh-andere/" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} className="icon" />

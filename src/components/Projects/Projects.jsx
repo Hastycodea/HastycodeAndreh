@@ -3,6 +3,8 @@ import "./Projects.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import sample from "../../assets/sample.png";
+import fasah from "../../assets/fasah.png";
+import mbugua from "../../assets/mbugua.png";
 
 const Projects = () => {
   return (
@@ -39,19 +41,23 @@ const Projects = () => {
       </div> */}
       <div className="samples">
         <div className="sample">
-          <img src={sample} alt="" />
+          <img src={fasah} alt="" />
           <div className="caption">
-            <h3>Engage Pro Employee Management System</h3>
+            <h3>FasahBooks Online BookStore</h3>
             <p>React JS, Tailwind CSS</p>
-            <button>More Info</button>
+            <a href="https://fasahbooks.netlify.app/" target="_blank">
+              <button>More Info</button>
+            </a>
           </div>
         </div>
         <div className="sample">
-          <img src={sample} alt="" />
+          <img src={mbugua} alt="" />
           <div className="caption">
-            <h3>Engage Pro Employee Management System</h3>
+            <h3>Mbugua Fitness Website</h3>
             <p>React JS, Tailwind CSS</p>
-            <button>More Info</button>
+            <a href="https://mbuguafitness.netlify.app/" target="_blank">
+              <button>More Info</button>
+            </a>
           </div>
         </div>
         <div className="sample">
